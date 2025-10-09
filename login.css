@@ -1,39 +1,144 @@
+/* login.css */
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: sans-serif;
-    background-color: black;
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
     display: flex;
-    justify-content: right;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    width: 180vh;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
 }
-form {
-    margin: 200;
-    background-color: rgb(39, 39, 39);
-    border: 10px;
-    box-shadow: 0 0 10px rgb(255, 0, 0);
-    width: 680px;
-    height: 600px;
-    text-align: center;
-}
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    color: red;
-}
-label {
-    font-weight: bold;
-    color:white;
-}
-input[type="text"],
-input[type="passworld0"] {
-    width: 90%;
-    padding: 8px;
-    margin: 8px 0 15px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+
+/* Image styling */
 img {
-    justify-content: left;
-    width: 200vh;
+    max-width: 200px; /* Adjust based on your GIF size */
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styling */
+form {
+    background-color: rgb(78, 78, 78);
+    box-shadow: 0 0 80px rgba(255, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Select dropdown */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Labels */
+h4 {
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/* Input fields */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Submit and Reset buttons */
+input[type="submit"],
+input[type="reset"] {
+    width: 48%;
+    padding: 12px;
+    margin: 10px 1%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+input[type="submit"] {
+    background-color: #000000;
+    color: white;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+input[type="reset"] {
+    background-color: #000000;
+    color: white;
+}
+input[type="reset"]:hover {
+    background-color: #545b62;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 480px) {
+    form {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%;
+        margin: 5px 0;
+    }
 }
