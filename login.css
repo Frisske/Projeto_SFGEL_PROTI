@@ -29,7 +29,7 @@ img {
 
 /* Form styling */
 form {
-    background-color: rgb(78, 78, 78);
+    background-color: rgb(155 22 29);
     box-shadow: 0 0 80px rgba(255, 0, 0, 0.5);
     padding: 30px;
     border-radius: 10px;
@@ -118,7 +118,7 @@ input[type="reset"]:hover {
     background-color: #545b62;
 }
 a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
 }
